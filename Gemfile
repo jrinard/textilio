@@ -13,6 +13,7 @@ gem 'devise'
 gem 'paperclip', '~> 4.1'
 gem 'rest-client', '>= 2.0'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'acts_as_votable', '~> 0.10.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri

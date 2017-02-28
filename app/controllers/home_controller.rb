@@ -9,7 +9,7 @@ def index
   end
 
 #tWEATHER    this makes the weather object and runs get humidity
-  weather_object = Weather.new("97223")
+  weather_object = Weather.new("98683")
   @humidity = weather_object.get_humidity()
 end
 

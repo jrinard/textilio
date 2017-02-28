@@ -6,6 +6,8 @@ end
 
 def new
   @message = Message.new
+  @user = current_user
+  @user2 = User.all.find(2) 
 end
 
 def create

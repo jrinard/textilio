@@ -1,7 +1,5 @@
-<h1>New Message</h1>
-
 <% if @message.errors.any? %>
-  <p>Something wen wrong:</p>
+  <p>Something went wrong:</p>
   <ul>
     <% @message.errors.full_messages.each do |message| %>
     <li><%= message %></li>
@@ -11,11 +9,10 @@
 
 <%= form_for @message do |f| %>
   <%= f.label :to %>
-  <%= f.text_field :to, :value => @user.phone %> <!-- Current_user's phone number -->
+  <%= f.text_field :to, :value => @user2.phone  %> <!-- Current_user's phone number -->
   <%= f.label :from %>
-  <%= f.text_field :from, :value => @user2.phone %>
+  <%= f.text_field :from, :value => "2085955077" %>
   <%= f.label :body %>
   <%= f.text_field :body, :value => 'Hello' %>
   <%= f.submit %>
 <% end  %>
-<!-- 2085955077  working number for from -->

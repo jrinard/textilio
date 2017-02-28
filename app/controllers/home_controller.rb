@@ -5,7 +5,10 @@ def index
   if params[:upvote]
     @user = User.find(params[:upvote])
     @user.liked_by current_user
+
   end
+    @user2 = User.find_by(params[:id]);
+
 end
 
 def new
